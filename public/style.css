@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center Horizontal */
+  align-items: center;     /* Center Vertical */
+  height: 100vh; 
+  background-color: #FFF3D6;         /* Must have height to see vertical centering */
+}
+
+
+.maintitle {
+    font-family: 'Nunito', sans-serif; /* Super rounded and friendly */
+    font-weight: 800; /* Extra bold for maximum cuteness */
+    font-size: 3rem; /* Big and readable */
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    
+    /* A soft, warm text shadow to make it pop against the cream background */
+    text-shadow: 2px 2px 0px #FFE082; 
+}
+.main-subtitle {
+    font-family: 'Poppins', sans-serif; /* Clean and legible */
+    font-weight: 500; /* Medium weight */
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 0.9; /* Slightly softer than the main title */
+    margin-bottom: 30px; /* Space between text and button */
+}
+.cute-btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff; /* White text usually looks best on Orange buttons */
+    /* Alternatively, use color: #4A3F35; if you prefer brown-on-orange */
+    
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    
+    /* Button Styling (Backgrounds based on your palette) */
+    background-color: #FFB347; 
+    border: none;
+    padding: 15px 32px;
+    border-radius: 50px; /* Fully rounded pill shape */
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(255, 179, 71, 0.4); /* Soft orange glow */
+}
+
+/* Button Hover State */
+.cute-btn:hover {
+    background-color: #FFA726; /* Slightly darker orange */
+    transform: translateY(-3px); /* Little "hop" up animation */
+    box-shadow: 0px 6px 20px rgba(255, 179, 71, 0.6);
+}
+.card-container {
+    background-color: #FFF3D6;  
+    display: flex; /* Helps center the card perfectly */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Takes up full screen height */
+    padding: 20px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dog-card {
+    background-color: rgba(255, 255, 255, 0.80); /* White with 80% opacity */
+    backdrop-filter: blur(10px); /* The "Glass" blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+    width: 100%;
+    max-width: 400px; /* Keeps the card from getting too wide on desktop */
+    padding: 25px;
+    border-radius: 30px; /* Very rounded corners */
+    
+    /* Soft shadow to lift it off the yellow background */
+    box-shadow: 0 10px 30px rgba(74, 63, 53, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Subtle white border */
+    
+    text-align: center;
+    
+    /* Apply the animation defined above */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+.dog-img {
+    width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Crops image nicely to fill the square/rectangle */
+    border-radius: 20px; /* Slightly less rounded than the card itself */
+    margin-bottom: 20px;
+    background-color: #FFE082; /* Placeholder color while image loads */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.quote-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4A3F35;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    padding: 0 10px; /* Prevents text from hitting the very edge */
+}
+
+.decoration-emoji {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    display: block; /* Puts it on its own line */
+    opacity: 0.8;
+    animation: bounce 2s infinite ease-in-out; /* Optional subtle bounce */
+}
+
+/* Optional cute bounce for the emoji */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+.next-btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #FFB347;
+    
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(255, 179, 71, 0.3);
+}
+
+.next-btn:hover {
+    background-color: #FFA726;
+    transform: scale(1.05); /* Grows slightly instead of moving up */
+}
